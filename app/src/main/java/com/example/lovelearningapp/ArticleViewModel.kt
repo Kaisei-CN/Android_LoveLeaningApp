@@ -1,5 +1,6 @@
 package com.example.lovelearningapp
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -11,6 +12,8 @@ class ArticleViewModel : ViewModel() {
 
     fun addUserPoints(points: Int) {
         _userPoints.value = (_userPoints.value ?: 0) + points
+        Log.d("分数", _userPoints.value.toString())
+
     }
 
 }

@@ -12,15 +12,33 @@
         <action
             android:id="@+id/action_navigation_home_to_navigation_points"
             app:destination="@id/navigation_points" />
+        <action
+            android:id="@+id/action_navigation_home_to_articleDetailFragment"
+            app:destination="@id/navigation_article_detail">
+            <argument
+                android:name="articleId"
+                app:argType="string" />
+        </action>
     </fragment>
 
     <fragment
         android:id="@+id/navigation_points"
-        android:name="com.example.lovelearningapp.PointsFragment"
-        android:label="Points Fragment"
+        android:name="com.example.lovelearningapp.PointFragment"
+        android:label="Point Fragment"
         tools:layout="@layout/fragment_points" >
         <action
             android:id="@+id/action_navigation_points_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <!-- 文章详情页 -->
+    <fragment
+        android:id="@+id/navigation_article_detail"
+        android:name="com.example.lovelearningapp.ArticleDetailFragment"
+        android:label="ArticleDetail Fragment"
+        tools:layout="@layout/fragment_article_detail" >
+        <action
+            android:id="@+id/action_navigation_detail_to_navigation_home"
             app:destination="@id/navigation_home" />
     </fragment>
 </navigation>
