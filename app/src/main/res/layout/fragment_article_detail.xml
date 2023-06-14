@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--文章标题-->
+    <TextView
+        android:id="@+id/articleTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:hint="article title"/>
+
+    <!-- 文章图片 -->
+    <ImageView
+        android:id="@+id/articleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image2" /><!-- 默认的占位图像 -->
+
+<!-- 文章内容-->
+    <TextView
+        android:id="@+id/articleContentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:hint="article content" />
+
+</LinearLayout>
