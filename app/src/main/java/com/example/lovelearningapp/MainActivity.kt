@@ -77,8 +77,8 @@ class MainActivity : AppCompatActivity() {
         //重复以上步骤插入其他文章
         val values2 = ContentValues().apply {
             put(DatabaseHelper.COLUMN_ID, "2")
-            put(DatabaseHelper.COLUMN_TITLE, "发展历史")
-            put(DatabaseHelper.COLUMN_CONTENT, "郑州大学的新闻学教育开始于1976年在中文系开办新闻学专业。1984年郑州大学成立新闻系，1993年获批新闻学硕士点，2000年获批传播学硕士点。2004年6月，郑州大学新闻系改制为新闻与传播学院。2014年12月，河南省委宣传部与郑州大学签约共建新闻与传播学院。2016年学院获批“公共传播”二级学科博士点，2018年获批新闻传播学一级学科博士点，2019年获批设立新闻传播学博士后科研流动站")
+            put(DatabaseHelper.COLUMN_TITLE, "Android开发书籍推荐")
+            put(DatabaseHelper.COLUMN_CONTENT, "很多时候我们都会不断收到新手的提问“Android开发的经典入门教材和学习路线？”、“Android 开发入门教程有哪些推荐？”等类似的问题，我们不断重复回答这些问题，这让我们萌生了做《 Android开发书籍推荐：从入门到精通系列学习路线书籍介绍》的想法，整理收集开发大牛的学习经验，以便让我们少走弯路，更快速成长。希望这个系列可以成为大家手头应对新手的好答案。")
             put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image2)
             //put(DatabaseHelper.COLUMN_VIDEO_RES_ID, R.raw.video2)
         }
@@ -87,8 +87,10 @@ class MainActivity : AppCompatActivity() {
         //...
         val values3 = ContentValues().apply {
             put(DatabaseHelper.COLUMN_ID, "3")
-            put(DatabaseHelper.COLUMN_TITLE, "历史")
-            put(DatabaseHelper.COLUMN_CONTENT, "郑州大学的新闻学教育开始于1976年在中文系开办新闻学专业。1984年郑州大学成立新闻系，1993年获批新闻学硕士点，2000年获批传播学硕士点。2004年6月，郑州大学新闻系改制为新闻与传播学院。2014年12月，河南省委宣传部与郑州大学签约共建新闻与传播学院。2016年学院获批“公共传播”二级学科博士点，2018年获批新闻传播学一级学科博士点，2019年获批设立新闻传播学博士后科研流动站")
+            put(DatabaseHelper.COLUMN_TITLE, "学习Android网站推荐")
+            put(DatabaseHelper.COLUMN_CONTENT, "1. Android Developers\n" +
+                    "作为一个Android开发者，官网的资料当然不可错过，从设计，培训，指南，文档，都不应该错过，在以后的学习过程中慢慢理解体会。\n" +
+                    "2. Android Guides - CodePath\n" + "CodePath是国外一个技术培训机构，主要培训iOS 和Android开发，而CodePath将Android Guides放在Github，已经获得了4000+个赞，对于Android初学这特别适合，而且浅显易懂。\n" )
             put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image3)
             //put(DatabaseHelper.COLUMN_VIDEO_RES_ID, R.raw.video2)
         }
@@ -96,54 +98,55 @@ class MainActivity : AppCompatActivity() {
 
         val values4 = ContentValues().apply {
             put(DatabaseHelper.COLUMN_ID, "4")
-            put(DatabaseHelper.COLUMN_TITLE, "发展历史4")
-            put(DatabaseHelper.COLUMN_CONTENT, "郑州大学的新闻学教育开始于1976年在中文系开办新闻学专业。1984年郑州大学成立新闻系，1993年获批新闻学硕士点，2000年获批传播学硕士点。2004年6月，郑州大学新闻系改制为新闻与传播学院。2014年12月，河南省委宣传部与郑州大学签约共建新闻与传播学院。2016年学院获批“公共传播”二级学科博士点，2018年获批新闻传播学一级学科博士点，2019年获批设立新闻传播学博士后科研流动站")
-            put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image2)
+            put(DatabaseHelper.COLUMN_TITLE, "南昌起义")
+            put(DatabaseHelper.COLUMN_CONTENT, "八一南昌起义常简称南昌起义或者八一起义，指在1927年8月1日中共联合 国民党左派 ，打响了武装反抗 国民党反动派 的第一枪，揭开了中国共产党独立领导武装斗争和创建革命军队的序幕。 [1] 起义由 周恩来 、 贺龙 、 叶挺 、 朱德 、 刘伯承 、 谭平山 领导。 1933年7月11日， 中华苏维埃共和国临时中央政府 根据 中央革命军事委员会 6月30日的建议，决定8月1日为 中国工农红军 成立纪念日。 从此，8月1日成为中国工农红军和后来的 中国人民解放军 的 建军节 。 1927年 8月1日2时，在周恩来、贺龙、叶挺、朱德、刘伯承的领导下，南昌起义开始。")
+            put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image4)
             //put(DatabaseHelper.COLUMN_VIDEO_RES_ID, R.raw.video2)
         }
         db.insert(DatabaseHelper.TABLE_NAME, null, values4)
 
         val values5 = ContentValues().apply {
             put(DatabaseHelper.COLUMN_ID, "5")
-            put(DatabaseHelper.COLUMN_TITLE, "发展历史5")
-            put(DatabaseHelper.COLUMN_CONTENT, "郑州大学的新闻学教育开始于1976年在中文系开办新闻学专业。1984年郑州大学成立新闻系，1993年获批新闻学硕士点，2000年获批传播学硕士点。2004年6月，郑州大学新闻系改制为新闻与传播学院。2014年12月，河南省委宣传部与郑州大学签约共建新闻与传播学院。2016年学院获批“公共传播”二级学科博士点，2018年获批新闻传播学一级学科博士点，2019年获批设立新闻传播学博士后科研流动站")
-            put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image2)
+            put(DatabaseHelper.COLUMN_TITLE, "晋朝历史")
+            put(DatabaseHelper.COLUMN_CONTENT, "晋朝（265年－420年），分为西晋与东晋两个时期，西晋为中国历史上九个大一统王朝之一，两晋上承三国下启南北朝，其中东晋属于六朝之一。. 265年司马炎篡魏，建立晋朝，定都洛阳，史称西晋，280年灭东吴，完成统一，后经历“八王之乱”。. 晋愍帝迁都长安，316年西晋灭亡，史称“五胡乱华”。. 317年，晋室南渡，司马睿在建邺建立东晋，东晋曾多次北伐。.")
+            put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image5)
             //put(DatabaseHelper.COLUMN_VIDEO_RES_ID, R.raw.video2)
         }
         db.insert(DatabaseHelper.TABLE_NAME, null, values5)
 
         val values6 = ContentValues().apply {
             put(DatabaseHelper.COLUMN_ID, "6")
-            put(DatabaseHelper.COLUMN_TITLE, "发展历史6")
-            put(DatabaseHelper.COLUMN_CONTENT, "郑州大学的新闻学教育开始于1976年在中文系开办新闻学专业。1984年郑州大学成立新闻系，1993年获批新闻学硕士点，2000年获批传播学硕士点。2004年6月，郑州大学新闻系改制为新闻与传播学院。2014年12月，河南省委宣传部与郑州大学签约共建新闻与传播学院。2016年学院获批“公共传播”二级学科博士点，2018年获批新闻传播学一级学科博士点，2019年获批设立新闻传播学博士后科研流动站")
-            put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image2)
+            put(DatabaseHelper.COLUMN_TITLE, "故宫历史")
+            put(DatabaseHelper.COLUMN_CONTENT, "故宫始建于1406年明永乐四年，建成于1420年明永乐十八年。 在故宫六百多年的发展中，经历了三个重要的历史阶段，分别是：第一阶段，明成祖朱棣营建故宫，至1644年，为明皇宫；第二阶段，清顺治十四年至1924年为清皇宫；第三阶段，1925年10月至今，为故宫博物院。")
+            put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image6)
             //put(DatabaseHelper.COLUMN_VIDEO_RES_ID, R.raw.video2)
         }
         db.insert(DatabaseHelper.TABLE_NAME, null, values6)
 
         val values7 = ContentValues().apply {
             put(DatabaseHelper.COLUMN_ID, "7")
-            put(DatabaseHelper.COLUMN_TITLE, "发展历史7")
-            put(DatabaseHelper.COLUMN_CONTENT, "郑州大学的新闻学教育开始于1976年在中文系开办新闻学专业。1984年郑州大学成立新闻系，1993年获批新闻学硕士点，2000年获批传播学硕士点。2004年6月，郑州大学新闻系改制为新闻与传播学院。2014年12月，河南省委宣传部与郑州大学签约共建新闻与传播学院。2016年学院获批“公共传播”二级学科博士点，2018年获批新闻传播学一级学科博士点，2019年获批设立新闻传播学博士后科研流动站")
-            put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image2)
+            put(DatabaseHelper.COLUMN_TITLE, "职场技能")
+            put(DatabaseHelper.COLUMN_CONTENT, "之所以把思考能力放在第一位，是因为思考不仅对于职场，对于人生中各种场合都非常重要。有 …\n" +
+                    "去哪所学校，上哪所大学，和谁谈恋爱，选择去哪家公司就职，选择用什么方法跟上司讲述你的解决方案，用什么方式跟客户达成协议，决定公司是否要开展或终止某个事业……你的每一个决定都是人生的十字路口，每一个决定都需要慎重思考。")
+            put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image7)
             //put(DatabaseHelper.COLUMN_VIDEO_RES_ID, R.raw.video2)
         }
         db.insert(DatabaseHelper.TABLE_NAME, null, values7)
 
         val values8 = ContentValues().apply {
             put(DatabaseHelper.COLUMN_ID, "8")
-            put(DatabaseHelper.COLUMN_TITLE, "发展历史8")
-            put(DatabaseHelper.COLUMN_CONTENT, "郑州大学的新闻学教育开始于1976年在中文系开办新闻学专业。1984年郑州大学成立新闻系，1993年获批新闻学硕士点，2000年获批传播学硕士点。2004年6月，郑州大学新闻系改制为新闻与传播学院。2014年12月，河南省委宣传部与郑州大学签约共建新闻与传播学院。2016年学院获批“公共传播”二级学科博士点，2018年获批新闻传播学一级学科博士点，2019年获批设立新闻传播学博士后科研流动站")
-            put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image2)
+            put(DatabaseHelper.COLUMN_TITLE, "幼儿园趣味活动")
+            put(DatabaseHelper.COLUMN_CONTENT, "品尝到成功滋味的、身体平衡能力较强的三名幼儿自由组合走大鞋，方法同两人走，只是难度有所增加，三人必须密切配合、步调一致才能走好。")
+            put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image8)
             //put(DatabaseHelper.COLUMN_VIDEO_RES_ID, R.raw.video2)
         }
         db.insert(DatabaseHelper.TABLE_NAME, null, values8)
 
         val values9 = ContentValues().apply {
             put(DatabaseHelper.COLUMN_ID, "9")
-            put(DatabaseHelper.COLUMN_TITLE, "发展历史9")
-            put(DatabaseHelper.COLUMN_CONTENT, "郑州大学的新闻学教育开始于1976年在中文系开办新闻学专业。1984年郑州大学成立新闻系，1993年获批新闻学硕士点，2000年获批传播学硕士点。2004年6月，郑州大学新闻系改制为新闻与传播学院。2014年12月，河南省委宣传部与郑州大学签约共建新闻与传播学院。2016年学院获批“公共传播”二级学科博士点，2018年获批新闻传播学一级学科博士点，2019年获批设立新闻传播学博士后科研流动站")
-            put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image2)
+            put(DatabaseHelper.COLUMN_TITLE, "生活小常识")
+            put(DatabaseHelper.COLUMN_CONTENT, "可以把盘子放进锅子里倒入牛奶，加热四至五分钟，牛奶沸腾后就可熄火取出盘子，裂痕就会几乎消失不见了。")
+            put(DatabaseHelper.COLUMN_IMAGE_RES_ID, R.drawable.image9)
             //put(DatabaseHelper.COLUMN_VIDEO_RES_ID, R.raw.video2)
         }
         db.insert(DatabaseHelper.TABLE_NAME, null, values9)

@@ -93,21 +93,21 @@ class HomeFragment : Fragment() {
         val articles = mutableMapOf<String, List<Article>>()
 
         articles["Android编程"] = listOf(
-            Article("1", "Android Article 1", "Content 1", R.drawable.image1, 0),
-            Article("2", "Android Article 2", "Content 2", R.drawable.image2, 0),
-            Article("3", "Android Article 3", "Content 3", R.drawable.image3, 0)
+            Article("1", "Android开发到底是做什么？", "安卓的能力很复杂", R.drawable.image1, 0),
+            Article("2", "Android开发书籍推荐", "《疯狂Android讲义》", R.drawable.image2, 0),
+            Article("3", "学习Android开发网站推荐", "Android Developers", R.drawable.image3, 0)
         )
 
         articles["中国历史"] = listOf(
-            Article("4", "History Article 4", "Content 1", R.drawable.image4, 0),
-            Article("5", "History Article 5", "Content 2", R.drawable.image5, 0),
-            Article("6", "History Article 6", "Content 3", R.drawable.image6, 0)
+            Article("4", "南昌起义", "八一南昌起义", R.drawable.image4, 0),
+            Article("5", "晋朝历史", "晋朝（265年－420年）", R.drawable.image5, 0),
+            Article("6", "故宫历史", "故宫始建于1406年", R.drawable.image6, 0)
         )
 
         articles["生活技能"] = listOf(
-            Article("7", "Lifestyle Article 7", "Content 1", R.drawable.image7, 0),
-            Article("8", "Lifestyle Article 8", "Content 2", R.drawable.image8, 0),
-            Article("9", "Lifestyle Article 9", "Content 3", R.drawable.image9, 0)
+            Article("7", "职场技能", "之所以把思考能力放在第一位", R.drawable.image7, 0),
+            Article("8", "幼儿园趣味活动", "品尝到成功滋味", R.drawable.image8, 0),
+            Article("9", "生活小常识", "可以把盘子放进锅子", R.drawable.image9, 0)
         )
 
         return articles

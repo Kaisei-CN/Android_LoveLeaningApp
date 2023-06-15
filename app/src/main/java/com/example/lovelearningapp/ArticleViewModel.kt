@@ -13,7 +13,5 @@ class ArticleViewModel : ViewModel() {
     fun addUserPoints(points: Int) {
         _userPoints.value = (_userPoints.value ?: 0) + points
         Log.d("分数", _userPoints.value.toString())
-
     }
-
 }
